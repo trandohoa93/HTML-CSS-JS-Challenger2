@@ -1,0 +1,84 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: $white-color;
+    box-shadow: 1px 1px $box-shadow1;
+    z-index: 99;
+  }
+  
+  .header__navbar {
+    @extend .flex-container;
+    
+    height: 88px;
+    padding: 0 3rem;
+  }
+  
+  .header__navbar-logo {
+    img {
+      width: 100px;
+    }
+  }
+  
+  .header__navbar-wrapper {
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+  
+    .header__navbar-list {
+      display: flex;
+      justify-items: center;
+      align-items: center;
+  
+      .header__navbar-item {
+        display: inline-block;
+  
+        .header__navbar-link {
+          display: flex;
+          align-items: center;
+          margin: 1.2rem;
+          padding: 1.2rem;
+          gap: 5px;
+          font-size: 1.4rem;
+          color: $gray-color;
+          text-decoration: none;
+  
+          i {
+            font-size: 1rem;
+          }
+        }
+  
+        .header__navbar-link:hover {
+          cursor: pointer;
+          opacity: 0.7;
+        }
+  
+        .header__navbar-button-link {
+          margin: 1.2rem;
+          padding: 1.2rem;
+          font-size: 1.6rem;
+          color: $gray-color;
+        }
+      }
+    }
+  }
+  .mobile-menu {
+    display: none;
+    padding: 1rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+  }
+  
+  .mobile-menu > .ti-menu-close {
+    display: block;
+  }
+  
+  .mobile-menu:hover {
+    background-color: var(--orange);
+  }
+  
+  .mobile-menu:hover .ti-menu {
+    color: $black-color;
+  }

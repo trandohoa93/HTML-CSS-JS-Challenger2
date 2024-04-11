@@ -1,0 +1,223 @@
+@include Responsive($breakpoint-sm) {
+    html {
+        font-size: 50%;
+    }
+
+    .header__navbar-wrapper {
+        position: fixed;
+        width: 100%;
+        padding: 2rem;
+        top: 88px;
+        left: 0;
+        background-color: white;
+        margin: 0;
+        flex-direction: column;
+        transform: translate(-100%);
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+   
+
+    .header__navbar-list {
+        flex-direction: column;
+        padding: 0;
+        gap: 2rem;
+    }
+
+    .header__navbar-item .header__navbar-link{
+       font-size: 2.5rem;
+       font-weight: 500;
+       margin-top: -1.5rem;
+    }
+
+    .header__navbar-item .header__navbar-button-link{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+     }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .slider {
+        height: auto;
+        border-radius: 0;
+    }
+
+    .slider__image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .slider, .category, .course, .about, .start, .quotes, .partners, footer {
+        padding: 2rem;
+    }
+
+    .start--wrapper {
+        .start__title {
+            font-size: 2rem;
+        }
+    }
+    
+    .slider__image{
+        display: flex;
+        align-items: center;
+    }
+
+    .slider__search {
+        width: 70%;
+    }
+
+    .category__title-text, .course__title-text, .about__title, .start__title, .quotes__title {
+        font-size: 2rem;
+    }
+    
+    .course__title {
+        font-size: 1.5rem;
+    }
+    
+    .course__item {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .start--wrapper {
+        border-radius: unset;
+        gap: 1rem;
+        .start__subtitle {
+            font-size: 1.5rem;
+            max-width: 80%;
+        }
+    }
+    .category__title, .course__title {
+        margin-bottom: 1rem;
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+
+    .course__text > .course__title {
+        margin-bottom: 1rem;
+    }
+
+    .course__subtitle {
+        flex-direction: column;
+    }
+
+    .about__item {
+        flex-direction: column;
+    }
+
+
+    .footer__mainnav {
+        padding-bottom: 1rem;
+    }
+
+    .footer__subnav {
+        flex-direction: column;
+    }
+    .footer__navbox-title {
+        font-size: 1.8rem;
+    }
+
+    .category__item {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .category__title, .course__title, .quotes__title, .partners__title {
+        margin-bottom: 1rem;
+    }
+}
+
+@include Responsive($breakpoint-md) {
+    html {
+        font-size: 50%;
+    }
+
+    .header__navbar-wrapper {
+        position: fixed;
+        width: 100%;
+        padding: 2rem;
+        top: 88px;
+        left: 0;
+        background-color: white;
+        margin: 0;
+        flex-direction: column;
+        transform: translate(-100%);
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+   
+
+    .header__navbar-list {
+        flex-direction: column;
+        padding: 0;
+        gap: 2rem;
+    }
+
+    .header__navbar-item .header__navbar-link{
+       font-size: 2.5rem;
+       font-weight: 500;
+       margin-top: -1.5rem;
+    }
+
+    .header__navbar-item .header__navbar-button-link{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+     }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .slider {
+        height: auto;
+    }
+
+    .slider__image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .slider, .category, .course, .about, .start, .quotes, .partners, footer {
+        padding: 2rem;
+    }
+
+    .slider__content {
+        .slider__content-title {
+            font-size: 3rem;
+        }
+    }
+    
+    .slider__image{
+        display: flex;
+        align-items: center;
+    }
+
+    .slider__search {
+        width: 70%;
+    }
+
+    .category__title-text, .course__title-text, .about__title, .start__title, .quotes__title {
+        font-size: 2rem;
+    }
+    
+    .course__title {
+        font-size: 1.5rem;
+    }
+    
+    .course__item {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .start--wrapper {
+        border-radius: unset;
+        gap: 1rem;
+        .start__subtitle {
+            font-size: 1.5rem;
+            max-width: 80%;
+        }
+    }
+
+    .category__title, .course__title, .quotes__title, .partners__title {
+        margin-bottom: 1rem;
+    }
+}

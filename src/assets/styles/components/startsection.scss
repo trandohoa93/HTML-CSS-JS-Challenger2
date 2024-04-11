@@ -1,0 +1,26 @@
+.start {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  
+  .start--wrapper {
+    @extend .flex-container;
+
+    flex-direction: column;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    border-radius: 0px 17rem;
+    background-color: $gray-color2;
+  
+    .start__title {
+      font-size: 2.5rem;
+      font-weight: 500;
+      color: $white-color;
+    }
+  
+    .start__subtitle {
+      max-width: 50%;
+      font-size: 2rem;
+      color: $white-color;
+    }
+  }

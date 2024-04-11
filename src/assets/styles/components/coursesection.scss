@@ -1,0 +1,135 @@
+.course {
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+    background-color: $white-color;
+  }
+  
+  .course__title {
+    @extend .flex-container;
+  
+    .course__title-text {
+      font-size: 2.5rem;
+      font-weight: 500;
+    }
+  }
+  
+  .course__button {
+    display: flex;
+  
+    .course__button-link {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-right: 2rem;
+      color: $gray-color;
+      font-size: 1.4rem;
+  
+      .icon {
+        font-size: 1rem;
+      }
+    }
+  }
+  
+  .course__item {
+    display: grid;
+    grid-column-gap: 2rem;
+    grid-row-gap: 1.5rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  
+  .course__box {
+    @extend .flex-container;
+    border-radius: 4px;
+    background-color: $white-color;
+    padding-bottom: 1.2rem;
+  
+    > img {
+      width: 100%;
+      object-fit: cover;
+      border-radius: 2rem;
+      padding: 1.2rem;
+    }
+  
+    hr {
+      width: 100%;
+      color: $gray-color;
+      border: 1px solid;
+      opacity: 0.1;
+    }
+  
+    .course__interact {
+      margin: 1.5rem 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      color: $gray-color;
+      padding-left: 1.2rem;
+      padding-right: 1.2rem;
+  
+      span {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  
+  $icon-list: (
+    "star": $star-color,
+    "eye": $star-eye,
+    "circle-play": $play-color
+  );
+  
+  @each $icon-name, $icon-color in $icon-list {
+    .fa-#{$icon-name} {
+      color: $icon-color;
+      font-size: 1.5rem;
+    }
+  }
+  .course__text {
+    padding: 1.2rem;
+  
+    .course__title {
+      margin-bottom: 1.2rem;
+      font-size: 2rem;
+      font-weight: 500;
+    }
+    .course__subtitle {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  
+  .course__author {
+    display: flex;
+    align-items: center;
+  
+    img {
+      width: 4rem;
+      border-radius: 0.4rem;
+    }
+    p {
+      margin-left: 1rem;
+      font-size: 1.5rem;
+      color: $gray-color;
+    }
+  }
+  
+  .course__price {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+    color: $gray-color;
+  
+    .course__price-dis {
+      text-decoration: line-through;
+      font-weight: 400;
+    }
+  
+    .course__price-normal {
+      color: $price;
+      font-weight: 700;
+    }
+  }

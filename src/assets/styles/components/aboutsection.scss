@@ -1,0 +1,106 @@
+.about {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  
+    .about__title {
+      text-align: center;
+      margin-bottom: 1.2rem;
+      font-size: 2.5rem;
+      font-weight: 500;
+    }
+    .about__item {
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+  }
+  
+  .about-grid__container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 0.5fr 1.5fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px;
+    width: 100%;
+    grid-template-areas:
+      " . . A A A . . . . ."
+      " . . A A A . . . . ."
+      " . . A A A . C C C C"
+      " . . A A A . C C C C"
+      " . . . . . . C C C C"
+      " B B B B . . C C C C"
+      " B B B B . . . . . ."
+      " B B B B . . . . . ."
+      " B B B B . . . . . ."
+      " B B B B . . . . . .";
+  
+    .about-grid__item {
+      > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 1rem;
+      }
+    }
+    .about-grid__item--0 {
+      grid-area: A;
+    }
+  
+    .about-grid__item--1 {
+      grid-area: B;
+    }
+  
+    .about-grid__item--2 {
+      grid-area: C;
+    }
+  }
+  
+  .about-step {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+    .about-step__item {
+      &:last-child {
+        .about-step__subtitle {
+          &:before {
+            display: none;
+          }
+        }
+      }
+    }
+  
+    .about-step__number {
+      font-size: 1.7rem;
+      font-weight: 400;
+    }
+  
+    .about-step__title {
+      display: flex;
+      align-items: center;
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+  
+    .about-step__subtitle {
+      position: relative;
+      font-size: 1.5rem;
+  
+      &:before {
+        position: absolute;
+        left: -25px;
+        content: "";
+        display: block;
+        width: 1px;
+        height: 150%;
+        background-color: $gray-color;
+        opacity: 0.5;
+      }
+    }
+  }
+  
+  .about-step__item.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 10px;
+  }

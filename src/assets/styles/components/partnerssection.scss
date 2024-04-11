@@ -1,0 +1,45 @@
+$background-color_1: #efeff7;
+
+.partners {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.partners__wrapper {
+  overflow: hidden;
+}
+.partners__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  p {
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+}
+.partners__btn {
+  display: flex;
+  gap: 2rem;
+  button {
+    background-color: $white-color2;
+    border: none;
+    border-radius: 5px;
+    color: $button-color;
+    padding: 1rem;
+    &:hover {
+      color: $button-color2;
+    }
+  }
+  i {
+    font-size: 1.5rem;
+  }
+}
+.partners__carousel {
+  .partners__logo {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    .partner-image {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

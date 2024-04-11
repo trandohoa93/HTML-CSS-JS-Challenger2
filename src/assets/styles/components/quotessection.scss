@@ -1,0 +1,65 @@
+.quotes {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: $white-color2;
+}
+.quotes__wrapper {
+  overflow: hidden;
+}
+.quotes__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  p {
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+}
+.quotes__item {
+  display: flex;
+  justify-content: space-between;
+}
+.quotes__card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+  background-color: $white-color3;
+}
+.card__title {
+  img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  p {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+}
+.quotes__btn {
+  display: flex;
+  gap: 2rem;
+  button {
+    background-color: $white-color2;
+    border: none;
+    border-radius: 5px;
+    color: $button-color;
+    padding: 1rem;
+    &:hover {
+      color: $button-color2;
+    }
+  }
+  i {
+    font-size: 1.5rem;
+  }
+}
+.card__des {
+  p {
+    font-size: 1.7rem;
+  }
+}

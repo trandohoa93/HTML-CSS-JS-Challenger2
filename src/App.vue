@@ -1,26 +1,47 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div class="app">
+    <HeaderSection />
+    <div class="container">
+      <SlideSectionVue />
+      <CategorySection />
+      <CourseSection />
+      <AboutSection />
+      <CourseSlideSection />
+      <StartSection />
+      <QuoutesSection />
+      <PartnersSection />
+    </div>
+    <FooterSection />
+  </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import AboutSection from "./components/AboutSection.vue";
+import CategorySection from "./components/CategorySection.vue";
+import CourseSection from "./components/CourseSection.vue";
+import CourseSlideSection from "./components/CourseSlideSection.vue";
+import FooterSection from "./components/FooterSection.vue";
+import HeaderSection from "./components/HeaderSection.vue";
+import PartnersSection from "./components/PartnersSection.vue";
+import QuoutesSection from "./components/QuotesSection.vue";
+import SlideSectionVue from "./components/SlideSection.vue";
+import StartSection from "./components/StartSection.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    HeaderSection,
+    SlideSectionVue,
+    CategorySection,
+    CourseSection,
+    AboutSection,
+    CourseSlideSection,
+    StartSection,
+    QuoutesSection,
+    PartnersSection,
+    FooterSection,
   },
 };
 </script>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style lang="scss"></style>

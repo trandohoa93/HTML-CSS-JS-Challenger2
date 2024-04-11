@@ -1,0 +1,11 @@
+@mixin Responsive($breakpoint) {
+   @if $breakpoint == $breakpoint-md {
+    @media (max-width: $breakpoint-md) {
+      @content;
+    }
+  } @else if $breakpoint == $breakpoint-sm {
+    @media (max-width: $breakpoint-sm) {
+      @content;
+    }
+  }
+}
